@@ -1,0 +1,140 @@
+/* ╔══════════════════════════════════════════╗
+   ║   WOFI — SLATE GREY-BLUE THEME          ║
+   ║   mrcat@archlinux — Hyprland Edition    ║
+   ╚══════════════════════════════════════════╝
+
+   Palette:
+   #14181f  — 
+   #1c2130  — 
+   #2a3448  — 
+   #3d5070  — 
+   #6a8aaa  
+   #b8c8d8  
+   #e2eaf2  
+*/
+
+* {
+    font-family: "JetBrainsMono Nerd Font", "Fira Code", monospace;
+    font-size: 14px;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    box-shadow: none;
+}
+
+
+window {
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+#outer-box {
+     opacity: 0.85;
+    background-color: #14181f;
+    border: 1px solid #2a3448;
+    border-radius: 10px;
+    padding: 12px;
+    min-width: 420px;
+    box-shadow:
+        0 0 0 1px #0e1118,
+        0 10px 40px rgba(8, 12, 20, 0.85);
+}
+
+
+#input {
+    background-color: #1c2130;
+    color: #b8c8d8;
+    border: 1px solid #2a3448;
+    border-radius: 6px;
+    padding: 8px 12px;
+    margin-bottom: 8px;
+    caret-color: #6a8aaa;
+    font-size: 14px;
+    transition: border-color 0.15s ease;
+}
+
+#input:focus {
+    border-color: #3d5070;
+    background-color: #1e2438;
+    box-shadow: 0 0 0 2px rgba(60, 80, 110, 0.25);
+}
+
+
+#scroll {
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+#inner-box {
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+
+#entry {
+    background-color: transparent;
+    border-radius: 6px;
+    padding: 7px 10px;
+    margin: 1px 0;
+    color: #4e6480;
+    transition: background-color 0.1s ease, color 0.1s ease;
+}
+
+#entry:hover {
+    background-color: #1c2538;
+    color: #8aa0b8;
+}
+
+
+#entry:selected,
+#entry.selected {
+    background-color: #1c2a3c;
+    color: #e2eaf2;
+    border-left: 2px solid #3d5070;
+    padding-left: 8px;
+}
+
+
+#text {
+    color: inherit;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+#img {
+    margin-right: 10px;
+    min-width: 24px;
+    min-height: 24px;
+}
+
+
+#unselected {
+    color: #2a3448;
+}
+
+
+#count {
+    color: #2a3448;
+    font-size: 11px;
+    padding: 4px 8px 0;
+}
+
+
+scrollbar {
+    width: 3px;
+    background-color: transparent;
+}
+
+scrollbar slider {
+    background-color: #2a3448;
+    border-radius: 4px;
+    min-height: 20px;
+}
+
+scrollbar slider:hover {
+    background-color: #3d5070;
+}

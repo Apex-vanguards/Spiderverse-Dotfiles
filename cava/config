@@ -1,0 +1,39 @@
+# 🌊 Spider-Man / Minimalist CAVA Konfiqurasiyası
+
+[general]
+# Şəkildəki kimi zərif və axıcı barlar üçün kadr tezliyi
+framerate = 60
+
+# Sütunların (barların) sayı. Şəkildə çox sıx deyil, ona görə 25-30 arası idealdır.
+bars = auto
+
+# Hər bir sütunun eni (piksel olaraq)
+bar_width = 1
+
+# Sütunlar arasındakı boşluq. Şəkildəki o ayrılığı tutmaq üçün boşluğu 2 edirik.
+bar_spacing = 3
+
+[input]
+# Səs daxiletməsi (Wayland/Hyprland üçün Pipewire/PulseAudio avtomatik tutacaq)
+method = pulse
+source = auto
+
+[output]
+# Terminalda vizuallaşdırma üsulu
+method = ncurses
+
+[color]
+# Şəkildəki o neon olmayan, sakit, dumanlı tünd göyümtül-boz tonunu tutmaq üçün:
+# Qeyd: Terminal rəng palitran (Tokyo Night) ilə tam uzlaşması üçün "gradient" istifadə edirik.
+
+gradient = 1
+gradient_count = 2
+gradient_color_1 = '#475569' # Altdakı təmiz, dumanlı boz-göy
+gradient_color_2 = '#64748b' # Sütunlar qalxanda bir az daha açılan zərif slate rəngi
+
+[smoothing]
+# Şəkildəki barların qəfil atılıb düşməməsi, tam dalğalı və estetik hərəkət etməsi üçün:
+monstercat = 1
+waves = 1
+gravity = 100
+ignore = 0
